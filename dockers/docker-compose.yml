@@ -4,7 +4,7 @@ services:
   chatbot-db:
     container_name: "chatbot-db"
     build:
-      context: ./elasticsearch
+      context: ./elastic
       dockerfile: ./Dockerfile
     environment:
       - discovery.type=single-node
