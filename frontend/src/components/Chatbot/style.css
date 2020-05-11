@@ -1,0 +1,111 @@
+.chatbot {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 60vh;
+  overflow-y: hidden;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 12px 24px 0px;
+}
+
+.chat_messages {
+  padding: 20px;
+  overflow-y: scroll;
+  background: #f5f8fb;
+  height: 100vh;
+}
+
+.chat_message {
+  position: relative;
+  margin: 20px 0;
+  padding: 8px 35px 8px 15px;
+  border-radius: 20px;
+  width: 60%;
+  text-align: left;
+  flex-direction: column;
+  color: #ffffff;
+  display: flex;
+}
+
+.bot_message {
+  background: deepskyblue;
+  margin-right: auto;
+}
+
+.user_message {
+  background: limegreen;
+  margin-left: auto;
+}
+
+.chat_form {
+  margin: 7px 0;
+}
+
+.chat_form input,
+.chat_form input:active {
+  border: none;
+  outline: none;
+}
+
+.chat_form .send {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/img/rsz_send.png");
+  background-size: 100%;
+}
+
+.respond_button {
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/img/rsz_reply.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+}
+
+.reply_question {
+  background: #f2f5f5;
+  border-left: 3px #e6daf7 solid;
+  padding: 7px 15px;
+  font-size: 12px;
+  margin: 10px 20px 20px 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.reply_question > .close {
+  background-image: url("/assets/img/rsz_x-close.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.quote_question {
+  background: none;
+  border-left: 3px #e6daf7 solid;
+  padding: 0px 15px;
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+.speaker {
+  font-size: 11px;
+  margin-bottom: 3px;
+  color: #02080e;
+}

@@ -1,0 +1,24 @@
+.home {
+  width: 100%;
+}
+
+.home > form {
+  width: 20%;
+  min-width: 100px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: stretch;
+}
+
+.home > form > .first-name {
+  width: 80%;
+  margin-right: 5px;
+}
+
+.home > form > .go {
+  width: 10%;
+}
+
+.greeting_logo {
+  width: 150px;
+}
