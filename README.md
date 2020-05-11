@@ -11,3 +11,10 @@ bash start.sh
 To terminate the app need to execute:
 
 bash down.sh
+
+
+Open few windows in Browser go to:
+
+http://localhost:3001/?username=SomeUserName
+
+Pay attention that for stable work would be better to specify any username.
