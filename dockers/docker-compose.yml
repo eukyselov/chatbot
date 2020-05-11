@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  chatbot-db:
+    container_name: "chatbot-db"
+    build:
+      context: ./elasticsearch
+      dockerfile: ./Dockerfile
+    environment:
+      - discovery.type=single-node
+    image: "chatbot-elasticsearch"
+    restart: always
+    ports:
+      - 9200:9200
